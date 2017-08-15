@@ -14,7 +14,6 @@
 @interface SensorWebServices : NSObject
 
 
-
 + (SensorWebServices *)sharedInstance;
 
 

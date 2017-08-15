@@ -18,7 +18,7 @@
 #define BLANK_STRING @""
 
 
-#define SERVER_URL @"http://ec2-54-175-159-168.compute-1.amazonaws.com:8090/"
-#define BASE_URL @"http://prolific-interview.herokuapp.com/5917d67586255d000a137449/books/"
+#define SERVER_URL @"http://ec2-54-83-191-130.compute-1.amazonaws.com:8080/com.org.SmartDairywebapplication/webapi/sensorRegistration/sensorData/"
+
 
 #endif /* SensorDefines_h */

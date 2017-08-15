@@ -29,8 +29,8 @@
 {
     
     NSMutableDictionary *params = [[NSMutableDictionary alloc]init];
-    [params setObject: sdata.sensorID forKey:@"sensorID" ];
-    [params setObject: sdata.sensorData forKey:@"sensorData" ];
+    [params setObject: sdata.sensorID forKey:@"Sensor_ID" ];
+    [params setObject: sdata.sensorData forKey:@"TotalData" ];
     NSLog(@"JSON Dictionary with sensor data: %@", [params description]);
         
     
