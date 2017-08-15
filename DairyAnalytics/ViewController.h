@@ -7,9 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AFNetworking.h"
+#import "SensorDefines.h"
+#import "sensorDataModel.h"
+#import "SensorWebServices.h"
 
 @interface ViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *sensorIDTextField;
+@property (weak, nonatomic) IBOutlet UITextField *sensorDataTextField;
+@property (weak, nonatomic) IBOutlet UIButton *submitSensorDataButton;
+
+- (IBAction)submitSensorDataButtonPressed:(id)sender;
+
+- (void)postSensorDataToServer:(sensorDataModel*) sensorDataObtained;
 
 @end
 

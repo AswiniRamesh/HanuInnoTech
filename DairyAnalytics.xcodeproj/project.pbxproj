@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57E5EC6AB517EA04699B25FC /* libPods-DairyAnalytics.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6359DC946130934DF8F39395 /* libPods-DairyAnalytics.a */; };
+		7EC321B933355E4A8A46A78C /* libPods-DairyAnalyticsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 902E6009E701CEF7B62FA9B3 /* libPods-DairyAnalyticsTests.a */; };
+		7F61E8EEFA38DC8997E6AF70 /* libPods-DairyAnalyticsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E7B08B4F35A77B45566D1779 /* libPods-DairyAnalyticsUITests.a */; };
 		DE10B54E1F4387EE00986059 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DE10B54D1F4387EE00986059 /* main.m */; };
 		DE10B5511F4387EE00986059 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DE10B5501F4387EE00986059 /* AppDelegate.m */; };
 		DE10B5541F4387EE00986059 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DE10B5531F4387EE00986059 /* ViewController.m */; };
@@ -15,6 +18,8 @@
 		DE10B55C1F4387EE00986059 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE10B55A1F4387EE00986059 /* LaunchScreen.storyboard */; };
 		DE10B5671F4387EE00986059 /* DairyAnalyticsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE10B5661F4387EE00986059 /* DairyAnalyticsTests.m */; };
 		DE10B5721F4387EE00986059 /* DairyAnalyticsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = DE10B5711F4387EE00986059 /* DairyAnalyticsUITests.m */; };
+		DEEF09261F438E8600019B44 /* sensorDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEF09251F438E8600019B44 /* sensorDataModel.m */; };
+		DEEF092A1F438F7200019B44 /* SensorWebServices.m in Sources */ = {isa = PBXBuildFile; fileRef = DEEF09291F438F7200019B44 /* SensorWebServices.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3F8293B34CFFAA5F8A4EB36D /* Pods-DairyAnalytics.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DairyAnalytics.release.xcconfig"; path = "Pods/Target Support Files/Pods-DairyAnalytics/Pods-DairyAnalytics.release.xcconfig"; sourceTree = "<group>"; };
+		56C123C3AFC9CFA0BEDDFBF7 /* Pods-DairyAnalyticsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DairyAnalyticsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DairyAnalyticsUITests/Pods-DairyAnalyticsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6359DC946130934DF8F39395 /* libPods-DairyAnalytics.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DairyAnalytics.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		902E6009E701CEF7B62FA9B3 /* libPods-DairyAnalyticsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DairyAnalyticsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ACF3FE59A26755F67449E9A2 /* Pods-DairyAnalyticsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DairyAnalyticsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DairyAnalyticsTests/Pods-DairyAnalyticsTests.release.xcconfig"; sourceTree = "<group>"; };
 		DE10B5491F4387EE00986059 /* DairyAnalytics.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DairyAnalytics.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE10B54D1F4387EE00986059 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		DE10B54F1F4387EE00986059 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +61,15 @@
 		DE10B56D1F4387EE00986059 /* DairyAnalyticsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DairyAnalyticsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE10B5711F4387EE00986059 /* DairyAnalyticsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DairyAnalyticsUITests.m; sourceTree = "<group>"; };
 		DE10B5731F4387EE00986059 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DEEF09241F438E8600019B44 /* sensorDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sensorDataModel.h; sourceTree = "<group>"; };
+		DEEF09251F438E8600019B44 /* sensorDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = sensorDataModel.m; sourceTree = "<group>"; };
+		DEEF09271F438ECD00019B44 /* SensorDefines.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SensorDefines.h; sourceTree = "<group>"; };
+		DEEF09281F438F7200019B44 /* SensorWebServices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SensorWebServices.h; sourceTree = "<group>"; };
+		DEEF09291F438F7200019B44 /* SensorWebServices.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SensorWebServices.m; sourceTree = "<group>"; };
+		E7B08B4F35A77B45566D1779 /* libPods-DairyAnalyticsUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DairyAnalyticsUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFB867540C9CBFB212DD295A /* Pods-DairyAnalyticsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DairyAnalyticsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DairyAnalyticsUITests/Pods-DairyAnalyticsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		F555DAE8548BE70C941D3C84 /* Pods-DairyAnalytics.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DairyAnalytics.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DairyAnalytics/Pods-DairyAnalytics.debug.xcconfig"; sourceTree = "<group>"; };
+		FF9B79B4974C0723A7747CDF /* Pods-DairyAnalyticsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DairyAnalyticsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DairyAnalyticsTests/Pods-DairyAnalyticsTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57E5EC6AB517EA04699B25FC /* libPods-DairyAnalytics.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7EC321B933355E4A8A46A78C /* libPods-DairyAnalyticsTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,12 +93,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F61E8EEFA38DC8997E6AF70 /* libPods-DairyAnalyticsUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		00A3F98678BF8BBA6467757A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6359DC946130934DF8F39395 /* libPods-DairyAnalytics.a */,
+				902E6009E701CEF7B62FA9B3 /* libPods-DairyAnalyticsTests.a */,
+				E7B08B4F35A77B45566D1779 /* libPods-DairyAnalyticsUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A9C701C222B8A1B10146D84E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F555DAE8548BE70C941D3C84 /* Pods-DairyAnalytics.debug.xcconfig */,
+				3F8293B34CFFAA5F8A4EB36D /* Pods-DairyAnalytics.release.xcconfig */,
+				FF9B79B4974C0723A7747CDF /* Pods-DairyAnalyticsTests.debug.xcconfig */,
+				ACF3FE59A26755F67449E9A2 /* Pods-DairyAnalyticsTests.release.xcconfig */,
+				EFB867540C9CBFB212DD295A /* Pods-DairyAnalyticsUITests.debug.xcconfig */,
+				56C123C3AFC9CFA0BEDDFBF7 /* Pods-DairyAnalyticsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		DE10B5401F4387EE00986059 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +130,8 @@
 				DE10B5651F4387EE00986059 /* DairyAnalyticsTests */,
 				DE10B5701F4387EE00986059 /* DairyAnalyticsUITests */,
 				DE10B54A1F4387EE00986059 /* Products */,
+				A9C701C222B8A1B10146D84E /* Pods */,
+				00A3F98678BF8BBA6467757A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,8 +150,13 @@
 			children = (
 				DE10B54F1F4387EE00986059 /* AppDelegate.h */,
 				DE10B5501F4387EE00986059 /* AppDelegate.m */,
+				DEEF09271F438ECD00019B44 /* SensorDefines.h */,
+				DEEF09241F438E8600019B44 /* sensorDataModel.h */,
+				DEEF09251F438E8600019B44 /* sensorDataModel.m */,
 				DE10B5521F4387EE00986059 /* ViewController.h */,
 				DE10B5531F4387EE00986059 /* ViewController.m */,
+				DEEF09281F438F7200019B44 /* SensorWebServices.h */,
+				DEEF09291F438F7200019B44 /* SensorWebServices.m */,
 				DE10B5551F4387EE00986059 /* Main.storyboard */,
 				DE10B5581F4387EE00986059 /* Assets.xcassets */,
 				DE10B55A1F4387EE00986059 /* LaunchScreen.storyboard */,
@@ -147,9 +199,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE10B5761F4387EE00986059 /* Build configuration list for PBXNativeTarget "DairyAnalytics" */;
 			buildPhases = (
+				748CA84D4F2C4E33DDD5A3A2 /* [CP] Check Pods Manifest.lock */,
 				DE10B5451F4387EE00986059 /* Sources */,
 				DE10B5461F4387EE00986059 /* Frameworks */,
 				DE10B5471F4387EE00986059 /* Resources */,
+				0ADCD3C48F28E7C17C5A1569 /* [CP] Embed Pods Frameworks */,
+				DF1392BF71B7059AE0B359CE /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -164,9 +219,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE10B5791F4387EE00986059 /* Build configuration list for PBXNativeTarget "DairyAnalyticsTests" */;
 			buildPhases = (
+				F0DE61D3A80E7CD726FA51BA /* [CP] Check Pods Manifest.lock */,
 				DE10B55E1F4387EE00986059 /* Sources */,
 				DE10B55F1F4387EE00986059 /* Frameworks */,
 				DE10B5601F4387EE00986059 /* Resources */,
+				52EC7A4D950167A493071BDC /* [CP] Embed Pods Frameworks */,
+				6A8D26F61150D7B2EB2E603D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -182,9 +240,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DE10B57C1F4387EE00986059 /* Build configuration list for PBXNativeTarget "DairyAnalyticsUITests" */;
 			buildPhases = (
+				C0E123F74F3D4D636A0DE88F /* [CP] Check Pods Manifest.lock */,
 				DE10B5691F4387EE00986059 /* Sources */,
 				DE10B56A1F4387EE00986059 /* Frameworks */,
 				DE10B56B1F4387EE00986059 /* Resources */,
+				5BDC1169F28CCACC6516BB37 /* [CP] Embed Pods Frameworks */,
+				71E77D57672580B1E9ABE1F5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,12 +329,161 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0ADCD3C48F28E7C17C5A1569 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DairyAnalytics/Pods-DairyAnalytics-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52EC7A4D950167A493071BDC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DairyAnalyticsTests/Pods-DairyAnalyticsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5BDC1169F28CCACC6516BB37 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DairyAnalyticsUITests/Pods-DairyAnalyticsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6A8D26F61150D7B2EB2E603D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DairyAnalyticsTests/Pods-DairyAnalyticsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71E77D57672580B1E9ABE1F5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DairyAnalyticsUITests/Pods-DairyAnalyticsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		748CA84D4F2C4E33DDD5A3A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DairyAnalytics-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C0E123F74F3D4D636A0DE88F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DairyAnalyticsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF1392BF71B7059AE0B359CE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DairyAnalytics/Pods-DairyAnalytics-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F0DE61D3A80E7CD726FA51BA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DairyAnalyticsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DE10B5451F4387EE00986059 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEEF092A1F438F7200019B44 /* SensorWebServices.m in Sources */,
 				DE10B5541F4387EE00986059 /* ViewController.m in Sources */,
+				DEEF09261F438E8600019B44 /* sensorDataModel.m in Sources */,
 				DE10B5511F4387EE00986059 /* AppDelegate.m in Sources */,
 				DE10B54E1F4387EE00986059 /* main.m in Sources */,
 			);
@@ -422,6 +632,7 @@
 		};
 		DE10B5771F4387EE00986059 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F555DAE8548BE70C941D3C84 /* Pods-DairyAnalytics.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DairyAnalytics/Info.plist;
@@ -433,6 +644,7 @@
 		};
 		DE10B5781F4387EE00986059 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F8293B34CFFAA5F8A4EB36D /* Pods-DairyAnalytics.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = DairyAnalytics/Info.plist;
@@ -444,6 +656,7 @@
 		};
 		DE10B57A1F4387EE00986059 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF9B79B4974C0723A7747CDF /* Pods-DairyAnalyticsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = DairyAnalyticsTests/Info.plist;
@@ -456,6 +669,7 @@
 		};
 		DE10B57B1F4387EE00986059 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ACF3FE59A26755F67449E9A2 /* Pods-DairyAnalyticsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = DairyAnalyticsTests/Info.plist;
@@ -468,6 +682,7 @@
 		};
 		DE10B57D1F4387EE00986059 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFB867540C9CBFB212DD295A /* Pods-DairyAnalyticsUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = DairyAnalyticsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -479,6 +694,7 @@
 		};
 		DE10B57E1F4387EE00986059 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 56C123C3AFC9CFA0BEDDFBF7 /* Pods-DairyAnalyticsUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = DairyAnalyticsUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -507,6 +723,7 @@
 				DE10B5781F4387EE00986059 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE10B5791F4387EE00986059 /* Build configuration list for PBXNativeTarget "DairyAnalyticsTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +732,7 @@
 				DE10B57B1F4387EE00986059 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DE10B57C1F4387EE00986059 /* Build configuration list for PBXNativeTarget "DairyAnalyticsUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +741,7 @@
 				DE10B57E1F4387EE00986059 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
