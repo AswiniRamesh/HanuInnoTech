@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.books = [[NSMutableArray alloc]init];
     
     // Do any additional setup after loading the view, typically from a nib.
 }
@@ -65,10 +66,21 @@
             UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil
                                                                            message:WEBSERVICE_ERROR_MESSAGE                                                                    preferredStyle:UIAlertControllerStyleAlert];
             
+            
             [self presentViewController:alert animated:YES completion:nil];
             return;
             
         }
+        else
+        {
+            
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil
+                                                                           message:WEBSERVICE_SUCCESS_MESSAGE                                                                    preferredStyle:UIAlertControllerStyleAlert];
+           
+            
+            [self presentViewController:alert animated:YES completion:nil];
+            return;
+                                  }
         
     }];
     

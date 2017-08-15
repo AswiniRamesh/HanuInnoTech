@@ -12,6 +12,8 @@
 #define ALERT_TITLE @"Dairy Analytics"
 #define SUBMIT_BUTTON_PROMPT @"Please fill all blank fields"
 #define WEBSERVICE_ERROR_MESSAGE @"Error in posting data.Please try later"
+#define WEBSERVICE_SUCCESS_MESSAGE @"Sensor Data posted successfully"
+
 
 #define CANCEL @"Cancel"
 #define OK @"OK"

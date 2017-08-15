@@ -36,21 +36,19 @@
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
     
-    manager.responseSerializer = [AFJSONResponseSerializer serializerWithReadingOptions:NSJSONReadingAllowFragments];
+   
+    manager.requestSerializer = [AFJSONRequestSerializer serializer];
+
+    manager.responseSerializer = [AFJSONResponseSerializer serializer];
     
-    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     
     AFSecurityPolicy* policy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate];
     
     [policy setValidatesDomainName:NO];
     [policy setAllowInvalidCertificates:YES];
     
-    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html", nil];
-    
-    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/html",nil];
-    
-    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json",@"text/plain",nil];
-    
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",nil];
+
     
     
     [manager POST:SERVER_URL parameters:params progress:nil success:^(NSURLSessionTask *task, id responseObject) {
@@ -58,6 +56,13 @@
         
         NSError *error = nil;
         NSMutableArray *arr = (NSMutableArray*)responseObject;
+        
+    
+        NSLog(@"JSON Dictionary with data obt: %@", [responseObject description]);
+
+        
+
+    
         
         if (!error)
         completion(arr, nil);

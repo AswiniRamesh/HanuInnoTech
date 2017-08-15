@@ -18,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *sensorDataTextField;
 @property (weak, nonatomic) IBOutlet UIButton *submitSensorDataButton;
 
+@property (strong, nonatomic) NSMutableArray *books;
+
 - (IBAction)submitSensorDataButtonPressed:(id)sender;
 
 - (void)postSensorDataToServer:(sensorDataModel*) sensorDataObtained;
