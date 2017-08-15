@@ -63,7 +63,7 @@
         if (error)
         {
             UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil
-                                                                           message:@"some error"                                                                    preferredStyle:UIAlertControllerStyleAlert];
+                                                                           message:WEBSERVICE_ERROR_MESSAGE                                                                    preferredStyle:UIAlertControllerStyleAlert];
             
             [self presentViewController:alert animated:YES completion:nil];
             return;
