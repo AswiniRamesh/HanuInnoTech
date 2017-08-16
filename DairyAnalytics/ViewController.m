@@ -66,7 +66,8 @@
             UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil
                                                                            message:WEBSERVICE_ERROR_MESSAGE                                                                    preferredStyle:UIAlertControllerStyleAlert];
             
-            
+            UIAlertAction* ok = [UIAlertAction actionWithTitle:OK style:UIAlertActionStyleDefault handler:nil];
+            [alert addAction:ok];
             [self presentViewController:alert animated:YES completion:nil];
             return;
             
@@ -77,6 +78,9 @@
             UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil
                                                                            message:WEBSERVICE_SUCCESS_MESSAGE                                                                    preferredStyle:UIAlertControllerStyleAlert];
            
+            
+            UIAlertAction* ok = [UIAlertAction actionWithTitle:OK style:UIAlertActionStyleDefault handler:nil];
+            [alert addAction:ok];
             
             [self presentViewController:alert animated:YES completion:nil];
             return;
