@@ -63,6 +63,9 @@
         
         if (error)
         {
+            NSLog(@"error code: %@",[error localizedDescription] );
+
+            
             UIAlertController *alert = [UIAlertController alertControllerWithTitle:nil
                                                                            message:WEBSERVICE_ERROR_MESSAGE                                                                    preferredStyle:UIAlertControllerStyleAlert];
             

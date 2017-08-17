@@ -28,20 +28,21 @@
 - (void)postSensorData:(sensorDataModel*) sdata andCompletion:(void(^)(NSMutableArray *arr, NSError *error))completion
 {
     
-    NSMutableDictionary *params = [[NSMutableDictionary alloc]init];
+    /*NSMutableDictionary *params = [[NSMutableDictionary alloc]init];
     [params setObject: sdata.sensorID forKey:@"Sensor_ID" ];
     [params setObject: sdata.sensorData forKey:@"TotalData" ];
+     NSLog(@"JSON Dictionary with sensor data: %@", [params description]);*/
+    
+    // { "topic" : "firstTopic",  "message": "sample message"       }
+    NSMutableDictionary *params = [[NSMutableDictionary alloc]init];
+    [params setObject: @"firstTopic" forKey:@"topic" ];
+    [params setObject: @"sample message" forKey:@"message" ];
     NSLog(@"JSON Dictionary with sensor data: %@", [params description]);
         
     
     AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
-    
-   
     manager.requestSerializer = [AFJSONRequestSerializer serializer];
-
     manager.responseSerializer = [AFJSONResponseSerializer serializer];
-    
-    
     AFSecurityPolicy* policy = [AFSecurityPolicy policyWithPinningMode:AFSSLPinningModeCertificate];
     
     [policy setValidatesDomainName:NO];
@@ -50,8 +51,7 @@
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",nil];
 
     
-    
-    [manager POST:SERVER_URL parameters:params progress:nil success:^(NSURLSessionTask *task, id responseObject) {
+    [manager POST:KAFKA_URL parameters:params progress:nil success:^(NSURLSessionTask *task, id responseObject) {
         
         
         NSError *error = nil;
@@ -59,8 +59,6 @@
         
     
         NSLog(@"JSON Dictionary with data obt: %@", [responseObject description]);
-
-        
 
     
         
