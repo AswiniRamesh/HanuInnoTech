@@ -33,10 +33,10 @@
     [params setObject: sdata.sensorData forKey:@"TotalData" ];
      NSLog(@"JSON Dictionary with sensor data: %@", [params description]);*/
     
-    // { "topic" : "firstTopic",  "message": "sample message"       }
+    
     NSMutableDictionary *params = [[NSMutableDictionary alloc]init];
     [params setObject: @"firstTopic" forKey:@"topic" ];
-    [params setObject: @"sample message" forKey:@"message" ];
+    [params setObject: @"random" forKey:@"message" ];
     NSLog(@"JSON Dictionary with sensor data: %@", [params description]);
         
     
@@ -58,7 +58,7 @@
         NSMutableArray *arr = (NSMutableArray*)responseObject;
         
     
-        NSLog(@"JSON Dictionary with data obt: %@", [responseObject description]);
+        NSLog(@"Response obtained: %@", [responseObject description]);
 
     
         
