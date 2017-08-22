@@ -17,6 +17,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.books = [[NSMutableArray alloc]init];
+     //self.title = @"Dairy Analytics";
     
     // Do any additional setup after loading the view, typically from a nib.
 }

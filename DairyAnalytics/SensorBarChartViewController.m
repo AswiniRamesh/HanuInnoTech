@@ -31,7 +31,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.title = @"Cubic Line Chart";
+    
+    self.title = @"Dairy Analytics - Charts";
+
     
     _sensorBarChartView.delegate=self;
    
@@ -44,7 +46,6 @@
     _sensorBarChartView.pinchZoomEnabled = NO;
     _sensorBarChartView.drawGridBackgroundEnabled = NO;
     _sensorBarChartView.maxHighlightDistance = 300.0;
-    
     _sensorBarChartView.xAxis.enabled = NO;
     
     ChartYAxis *yAxis = _sensorBarChartView.leftAxis;
@@ -117,7 +118,7 @@
 
         
         set1.drawCubicEnabled = YES;
-        set1.cubicIntensity = 0.2;
+        set1.cubicIntensity = 0.1;
         set1.drawCirclesEnabled = NO;
         set1.lineWidth = 1.8;
         set1.circleRadius = 4.0;
