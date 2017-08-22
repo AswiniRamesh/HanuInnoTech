@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F2073" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="jo9-mU-EQv">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -73,7 +73,25 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="56i-Py-FGg">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="Cn2-3f-WLu">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="4vX-se-iaA">
+                                <rect key="frame" x="-175" y="-234" width="64" height="45"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <state key="normal" backgroundImage="chart_line (1).png">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showCharts:" destination="BYZ-38-t0r" eventType="touchDown" id="9YF-Bw-Jvu"/>
+                                    <segue destination="30M-yT-3YV" kind="show" id="2YW-9Z-rbo"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="chartsButton" destination="4vX-se-iaA" id="vZT-My-MyF"/>
                         <outlet property="sensorDataTextField" destination="NX4-48-vdc" id="4un-jk-WQq"/>
                         <outlet property="sensorIDTextField" destination="PQw-m9-uP9" id="aQh-QN-2FY"/>
                         <outlet property="submitSensorDataButton" destination="uUl-Z7-rgX" id="L74-Eb-hX3"/>
@@ -81,7 +99,62 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1023.1884057971015" y="112.50000000000001"/>
+        </scene>
+        <!--Sensor Bar Chart View Controller-->
+        <scene sceneID="u4x-Dk-dmd">
+            <objects>
+                <viewController id="30M-yT-3YV" customClass="SensorBarChartViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NGD-6P-pxe"/>
+                        <viewControllerLayoutGuide type="bottom" id="hVj-Qp-5mq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="xEK-YW-lMF">
+                        <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0dE-sP-P1Z" customClass="LineChartView" customModule="Charts">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="628"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0dE-sP-P1Z" firstAttribute="leading" secondItem="xEK-YW-lMF" secondAttribute="leading" id="Zyg-8B-FAH"/>
+                            <constraint firstAttribute="trailing" secondItem="0dE-sP-P1Z" secondAttribute="trailing" id="a8C-sQ-S7H"/>
+                            <constraint firstItem="0dE-sP-P1Z" firstAttribute="top" secondItem="xEK-YW-lMF" secondAttribute="top" id="fPI-5i-c4d"/>
+                            <constraint firstItem="hVj-Qp-5mq" firstAttribute="top" secondItem="0dE-sP-P1Z" secondAttribute="bottom" id="yYp-Ch-uqe"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
+                    <connections>
+                        <outlet property="sensorBarChartView" destination="0dE-sP-P1Z" id="V1P-V4-2P5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lx0-Md-4cq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1847.826086956522" y="277.17391304347831"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="gEm-Xg-JYv">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jo9-mU-EQv" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ijk-Ky-ovH">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="jsH-jk-2LF"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f5i-Yx-jXu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
             <point key="canvasLocation" x="115.94202898550725" y="112.50000000000001"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="chart_line (1).png" width="48" height="48"/>
+    </resources>
 </document>

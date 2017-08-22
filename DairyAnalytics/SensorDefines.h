@@ -20,7 +20,7 @@
 #define BLANK_STRING @""
 
 
-#define SERVER_URL @"http://ec2-54-83-191-130.compute-1.amazonaws.com:8080/com.org.SmartDairywebapplication/webapi/sensorRegistration/sensorData/"
+#define AWS_URL @"http://ec2-54-83-191-130.compute-1.amazonaws.com:8080/com.org.SmartDairywebapplication/webapi/sensorRegistration/sensorData/"
 #define KAFKA_URL @"http://137.135.51.60:8080/server/kafka/post"
 
 

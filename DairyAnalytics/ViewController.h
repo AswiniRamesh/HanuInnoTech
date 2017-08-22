@@ -17,12 +17,14 @@
 @property (weak, nonatomic) IBOutlet UITextField *sensorIDTextField;
 @property (weak, nonatomic) IBOutlet UITextField *sensorDataTextField;
 @property (weak, nonatomic) IBOutlet UIButton *submitSensorDataButton;
+@property (weak, nonatomic) IBOutlet UIButton *chartsButton;
 
 @property (strong, nonatomic) NSMutableArray *books;
 
 - (IBAction)submitSensorDataButtonPressed:(id)sender;
 
 - (void)postSensorDataToServer:(sensorDataModel*) sensorDataObtained;
+- (IBAction)showCharts:(id)sender;
 
 @end
 
